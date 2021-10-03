@@ -7,7 +7,7 @@
 //
 import UIKit
 
-@objc public protocol MaterialShowcaseDelegate: class {
+@objc public protocol MaterialShowcaseDelegate: AnyObject {
   @objc optional func showCaseWillDismiss(showcase: MaterialShowcase, didTapTarget:Bool)
   @objc optional func showCaseDidDismiss(showcase: MaterialShowcase, didTapTarget:Bool)
 }
